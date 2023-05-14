@@ -15,6 +15,6 @@ for i in uu:
     # 이미지 다운로드
     response = requests.get(i)
     # 이미지를 파일에 저장
-    with open(f'./data/dataset/waifu2x/{str(uuid.uuid4())}.png', 'wb') as f:
+    with open(f'../data/dataset/waifu2x/{str(uuid.uuid4())}.png', 'wb') as f:
         f.write(response.content)
     print(f"Save: ./art/{str(uuid.uuid4())}.png !")
